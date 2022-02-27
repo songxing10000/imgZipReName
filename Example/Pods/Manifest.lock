@@ -1,0 +1,23 @@
+PODS:
+  - imgZipReName (0.1.0):
+    - ZIPFoundation (~> 0.9.12)
+  - ZIPFoundation (0.9.13)
+
+DEPENDENCIES:
+  - imgZipReName (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - ZIPFoundation
+
+EXTERNAL SOURCES:
+  imgZipReName:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  imgZipReName: 05e1f2568455e1a4c97ed945d3cb48f76976d303
+  ZIPFoundation: ae5b4b813d216d3bf0a148773267fff14bd51d37
+
+PODFILE CHECKSUM: 2fc8ef3cd5c78e69e66b0ff3931b4adf9818b982
+
+COCOAPODS: 1.11.2
