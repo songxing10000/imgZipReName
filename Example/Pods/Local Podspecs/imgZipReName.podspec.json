@@ -1,6 +1,6 @@
 {
   "name": "imgZipReName",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "A short description of imgZipReName.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/songxing10000/imgZipReName",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/songxing10000/imgZipReName.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "osx": "10.15"
