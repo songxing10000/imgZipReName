@@ -33,8 +33,9 @@ TODO: Add long description of the pod here.
   
   s.subspec 'Source' do |ss|
   ss.source_files = 'imgZipReName/Classes/**/*.{h,m,swift}'
+  ss.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) PODSPEC_NAME=#{s.name} PODSPEC_VERSION=#{s.version}" }
   ss.resource_bundles = {
-      'imgZipReName' => ['imgZipReName/Assets/**/*.{storyboard,xib,xcassets,json}', 'imgZipReName/Classes/**/*.{xib}']
+      'imgZipReName' => ['imgpiZipReName/Assets/**/*.{storyboard,xib,xcassets,json}', 'imgZipReName/Classes/**/*.{xib}']
   }
   ss.dependency 'ZIPFoundation', '~> 0.9.12'
   
