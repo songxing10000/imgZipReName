@@ -1,5 +1,7 @@
 PODS:
-  - imgZipReName (0.1.0):
+  - imgZipReName (0.0.1):
+    - imgZipReName/Source (= 0.0.1)
+  - imgZipReName/Source (0.0.1):
     - ZIPFoundation (~> 0.9.12)
   - ZIPFoundation (0.9.13)
 
@@ -15,9 +17,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  imgZipReName: 05e1f2568455e1a4c97ed945d3cb48f76976d303
+  imgZipReName: 55c9c53efebe0f63792454ddaed17963a660e876
   ZIPFoundation: ae5b4b813d216d3bf0a148773267fff14bd51d37
 
-PODFILE CHECKSUM: 2fc8ef3cd5c78e69e66b0ff3931b4adf9818b982
+PODFILE CHECKSUM: e16d2a3495b86f5652d92a7dcacbcf3ba051041e
 
 COCOAPODS: 1.11.2

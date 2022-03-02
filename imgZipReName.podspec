@@ -37,9 +37,11 @@ TODO: Add long description of the pod here.
       'imgZipReName' => ['imgZipReName/Assets/**/*.{storyboard,xib,xcassets,json}', 'imgZipReName/Classes/**/*.{xib}']
   }
   ss.dependency 'ZIPFoundation', '~> 0.9.12'
-  ss.swift_version = "5.0"
+  
 
   end
+  s.swift_version = "5.0"
+
 #  s.subspec 'Framework' do |ss|
 #       ss.ios.vendored_framework = '二进制路径'
 #       ss.dependency 'ZIPFoundation', '~> 0.9.12'
