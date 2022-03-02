@@ -1,4 +1,4 @@
-framework module imgZipReName {
+module imgZipReName {
   umbrella header "imgZipReName-umbrella.h"
 
   export *
