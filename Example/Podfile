@@ -1,5 +1,5 @@
 use_frameworks!
-ENV['SWIFT_VERSION'] = '5'
+use_modular_headers!
 target 'imgZipReName_Example' do
   pod 'imgZipReName', :path => '../'
 
