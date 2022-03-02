@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'imgZipReName'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of imgZipReName.'
 
 # This description is used to generate tags and improve search results.
@@ -30,14 +30,21 @@ TODO: Add long description of the pod here.
 
   s.platform = :osx
   s.osx.deployment_target = "10.15"
-
-  s.source_files = 'imgZipReName/Classes/**/*.{h,m,swift}'
-  s.resource_bundles = {
-      'imgZipReName' => ['imgZipReName/Assets/**/*.{storyboard,xib,xcassets,json}']
+  
+  s.subspec 'Source' do |ss|
+  ss.source_files = 'imgZipReName/Classes/**/*.{h,m,swift}'
+  ss.resource_bundles = {
+      'imgZipReName' => ['imgZipReName/Assets/**/*.{storyboard,xib,xcassets,json}', 'imgZipReName/Classes/**/*.{xib}']
   }
+  ss.dependency 'ZIPFoundation', '~> 0.9.12'
+  end
+#  s.subspec 'Framework' do |ss|
+#       ss.ios.vendored_framework = '二进制路径'
+#       ss.dependency 'ZIPFoundation', '~> 0.9.12'
+#    end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'Cocoa'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'ZIPFoundation', '~> 0.9.12'
 
 end
+
