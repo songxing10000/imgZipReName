@@ -1,5 +1,4 @@
 
-use_modular_headers!
 target 'imgZipReName_Example' do
   pod 'imgZipReName', :path => '../'
 
