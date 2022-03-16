@@ -47,7 +47,7 @@ public class ReNameVC: NSViewController {
     func unZipAtURL(_ zipFileURL: URL){
        
         /// 指定了路径
-        if  m_listBox.stringValue.hasSuffix(".xcassets") {
+        if  m_listBox.stringValue.contains(".xcassets") {
             // 直接解压到文件夹xcassets，同时生成Contents.json
             zipToXcassetsFolder(zipFileURL)
         } else {
@@ -214,7 +214,7 @@ public class ReNameVC: NSViewController {
     @IBAction func chooseFolder(_ sender: NSButton) {
         
         Util.chooseFolder(for: view.window) { folderPath in
-            if folderPath.hasSuffix(".xcassets") {
+            if folderPath.contains(".xcassets") {
                 let folderPaths = Util.saveStrToStrArr(key: "spFolderPath", saveStr: folderPath)
                 
                 if !folderPaths.isEmpty {
@@ -232,6 +232,7 @@ public class ReNameVC: NSViewController {
     @IBAction func clickClearBtn(_ sender: NSButton) {
         m_listBox.stringValue = ""
         UserDefaults.standard.set(nil, forKey: "spFolderPath")
+        m_xcassetsFolderPaths.removeAll()
         m_listBox.reloadData()
     }
 }
