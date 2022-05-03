@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		09673550AE73D3A885C738B4A084752B /* ZIPFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4B6D892739AFF29E312C31F8E209B /* ZIPFoundation-dummy.m */; };
-		0C0DFCF144D103598EA11E50E67FFEC1 /* imgZipReName-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B2A3E6C7C2EDB1110574952B0D64EC /* imgZipReName-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0C0DFCF144D103598EA11E50E67FFEC1 /* imgZipReName-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610B9585146E23638B9A6797BE68E9F /* imgZipReName-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0E5BBC5681E3B9C15569D2F1DEF2D8EA /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6BC90518C3E7FE6993A4EB7B4875F /* Data+Serialization.swift */; };
 		19BA9AA808042D5EE31837E09D193207 /* Pods-imgZipReName_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB2F5AA9FAC7A1A4BEABC4BB8090AE4 /* Pods-imgZipReName_Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		20D5B7BF08CB397B0E0EEEE2B19C515D /* Archive+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FD873045EA1833332780BA66CA351 /* Archive+Helpers.swift */; };
-		24121CA9FCE9DC42D691B31FB729905D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B55AD922B890FF4FAFBE05FC888A25 /* Util.swift */; };
+		24121CA9FCE9DC42D691B31FB729905D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC13367327BA220A0BA0A67A622C5D /* Util.swift */; };
 		29B1739300A35E63EC63F8E336C81E5B /* Entry+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4148D6468EC633198991C3D7784A264 /* Entry+Serialization.swift */; };
 		32D02F4E6047F1C3CB3966BB6094F4A4 /* URL+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C792EA2BCF2AD7468EABC1327840AC /* URL+ZIP.swift */; };
 		420A07991CAE0E16BF3D79CB3751BE78 /* Archive+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FF6C9AAE195C82D08F0031B294C6 /* Archive+Writing.swift */; };
-		45886D4317B11A7E71F6FF29FFE1ED94 /* imgZipReName-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F46F88A7BA84DE1CA1D72E9C73EE4344 /* imgZipReName-dummy.m */; };
+		45886D4317B11A7E71F6FF29FFE1ED94 /* imgZipReName-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC552086DBC12D082B4D39541FF252E1 /* imgZipReName-dummy.m */; };
 		47CC1D0AD282AB3AF9E0AF3677F154C6 /* Archive+ReadingDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DF7D838C0B90A177A34E30338BF6B /* Archive+ReadingDeprecated.swift */; };
 		4F5D1F5FB14B1DA05140A989F5E49B5C /* Archive+WritingDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A691FAC3DF12AD2E8146CF7D1F024 /* Archive+WritingDeprecated.swift */; };
 		5717FDF88A3BDB6191B7A59013AA304E /* Archive+ZIP64.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0AA39DBA8E71741843F9F44A16D524 /* Archive+ZIP64.swift */; };
@@ -28,107 +28,109 @@
 		874D1B2EFE8D4A750F284071C7E8A13D /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E5E1EC4020F42942CD391F5A1B7D60 /* Entry.swift */; };
 		9088D4CA1FF8AA61DB5DDE08EE85D160 /* ZIPFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9BFFC1073FB4BFAD0119736BC575B1F /* ZIPFoundation-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9E7C00494448CCE96266FE0D6139969A /* Archive+MemoryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D491F7E41C1404F3AFA78156CE544 /* Archive+MemoryFile.swift */; };
-		A20B6DC27C7D6F2C8744C253133935D1 /* FileDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE52FF02C76E7F5F8FE4A8371D6250E9 /* FileDragView.swift */; };
+		A20B6DC27C7D6F2C8744C253133935D1 /* FileDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F3C40609196B5E7B950AF83331E26 /* FileDragView.swift */; };
+		A7B89B741A62375C501C0D014E5F4DCC /* ReNameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEA5F49B2DB5442A423E6E1043F0AD0 /* ReNameVC.xib */; };
 		BDF770A451EE4B5DFAF610590200DC7F /* Archive+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6804F54CA0DD7F72A3F3BAC41BD53C8 /* Archive+Progress.swift */; };
 		DBD981CE0AAE99A8CAE3029E55CAFEAA /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4003153FF628503F92C1B25436B7A93 /* Data+Compression.swift */; };
 		E1FA7CFCFD40E655396D9EFEF0B205F4 /* Archive+BackingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4440A22BE05F2761874249F45D6F8C5 /* Archive+BackingConfiguration.swift */; };
-		EAC0B899C956AF61327A5D582991F1AD /* ReNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023A2CA927D84BAA32A4B0890A535F7 /* ReNameVC.swift */; };
+		EAC0B899C956AF61327A5D582991F1AD /* ReNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0426A38B2DF596AF55FB681574194D /* ReNameVC.swift */; };
 		FCA44DC47934288B9203656D1690E8B8 /* Pods-imgZipReName_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0960E08BF8452F777B1775BDC67D4385 /* Pods-imgZipReName_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09ACD1D79014A29206246E243878C97B /* PBXContainerItemProxy */ = {
+		26D8CD21AFA698A3DC86443FF1338D8F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AA15C8469D67684160CC2A7098EB841C;
 			remoteInfo = ZIPFoundation;
 		};
-		75504565E43A8E6676C8857EE12D3FA4 /* PBXContainerItemProxy */ = {
+		AAB9BF176A3BB5D90D21F66CF1572582 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 38AA83C04CFB6C07EE700ED457E573E4;
 			remoteInfo = "imgZipReName-imgZipReName";
 		};
-		87B31E2527CFF7C57D11D6B5D207EF0D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1DB3F6E8EA72797018305B013D095C52;
-			remoteInfo = imgZipReName;
-		};
-		F29FFE9E5088DA5E4FCD3CF139BAD93D /* PBXContainerItemProxy */ = {
+		D709109EBB791E931149D26B67FE92E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AA15C8469D67684160CC2A7098EB841C;
 			remoteInfo = ZIPFoundation;
 		};
+		E37EF6A6CFD59DE67E86C6EEFE4856A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DB3F6E8EA72797018305B013D095C52;
+			remoteInfo = imgZipReName;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040FD9C7DA2E824DEA6D95293F2C6772 /* imgZipReName.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = imgZipReName.release.xcconfig; sourceTree = "<group>"; };
 		069979228C608E27C9971F7C22CC2941 /* Entry+ZIP64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Entry+ZIP64.swift"; path = "Sources/ZIPFoundation/Entry+ZIP64.swift"; sourceTree = "<group>"; };
 		0960E08BF8452F777B1775BDC67D4385 /* Pods-imgZipReName_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-imgZipReName_Example-dummy.m"; sourceTree = "<group>"; };
 		0AC6BC90518C3E7FE6993A4EB7B4875F /* Data+Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Serialization.swift"; path = "Sources/ZIPFoundation/Data+Serialization.swift"; sourceTree = "<group>"; };
 		0CA6B54A5B3227B4FFCCA41ED4446383 /* imgZipReName-imgZipReName */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "imgZipReName-imgZipReName"; path = imgZipReName.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB62F275BC78EB1ABC2DF0993829790 /* Archive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Archive.swift; path = Sources/ZIPFoundation/Archive.swift; sourceTree = "<group>"; };
+		1045309F4DAFE20348A1E393E6F26678 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		121CC6C390057C96BA996C9FD1139C04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		12618805DB36932ED271C11F61ED775B /* imgZipReName.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = imgZipReName.modulemap; sourceTree = "<group>"; };
 		15C792EA2BCF2AD7468EABC1327840AC /* URL+ZIP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+ZIP.swift"; path = "Sources/ZIPFoundation/URL+ZIP.swift"; sourceTree = "<group>"; };
 		18D4B6D892739AFF29E312C31F8E209B /* ZIPFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZIPFoundation-dummy.m"; sourceTree = "<group>"; };
+		1DAC13367327BA220A0BA0A67A622C5D /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		2323DEA76CCA42D09AA23DB9A6E67814 /* ResourceBundle-imgZipReName-imgZipReName-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-imgZipReName-imgZipReName-Info.plist"; sourceTree = "<group>"; };
 		2A77C7326544578899326673AE9ABFC6 /* ZIPFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZIPFoundation.modulemap; sourceTree = "<group>"; };
 		2B8DF7D838C0B90A177A34E30338BF6B /* Archive+ReadingDeprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+ReadingDeprecated.swift"; path = "Sources/ZIPFoundation/Archive+ReadingDeprecated.swift"; sourceTree = "<group>"; };
 		33123AA73434BF85CF5C9511080AAC91 /* Data+CompressionDeprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+CompressionDeprecated.swift"; path = "Sources/ZIPFoundation/Data+CompressionDeprecated.swift"; sourceTree = "<group>"; };
 		348E26ADD95A11C940DFEEB06B65B951 /* Pods-imgZipReName_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-imgZipReName_Example.release.xcconfig"; sourceTree = "<group>"; };
-		44B3096E6B4AEBD00548B2A0D6361BC4 /* imgZipReName.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = imgZipReName.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		44ECE409DAAE0BC4DC1CA80A57E9086C /* imgZipReName.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = imgZipReName.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		454F3C40609196B5E7B950AF83331E26 /* FileDragView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileDragView.swift; sourceTree = "<group>"; };
+		4610B9585146E23638B9A6797BE68E9F /* imgZipReName-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "imgZipReName-umbrella.h"; sourceTree = "<group>"; };
 		46A04E4A95B7B3F3A5D75EF872E8374A /* Pods-imgZipReName_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-imgZipReName_Example-resources.sh"; sourceTree = "<group>"; };
 		48A4A6EDC08C8AC933D0DCD507E9D173 /* ZIPFoundation */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = ZIPFoundation; path = libZIPFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F45DCEA603BA88BB42B1117698F2A2 /* Pods-imgZipReName_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-imgZipReName_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4AEC389053DF1361570FB4E740E94D97 /* imgZipReName-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "imgZipReName-prefix.pch"; sourceTree = "<group>"; };
 		4C0D491F7E41C1404F3AFA78156CE544 /* Archive+MemoryFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+MemoryFile.swift"; path = "Sources/ZIPFoundation/Archive+MemoryFile.swift"; sourceTree = "<group>"; };
 		4C9FD873045EA1833332780BA66CA351 /* Archive+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Helpers.swift"; path = "Sources/ZIPFoundation/Archive+Helpers.swift"; sourceTree = "<group>"; };
 		4E12F8D6B84764CEEC831943FCD9D1AA /* Pods-imgZipReName_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-imgZipReName_Example.modulemap"; sourceTree = "<group>"; };
-		5023A2CA927D84BAA32A4B0890A535F7 /* ReNameVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReNameVC.swift; sourceTree = "<group>"; };
-		63E8BD7F7A80DB44E0FAD9F3C0E65790 /* ResourceBundle-imgZipReName-imgZipReName-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-imgZipReName-imgZipReName-Info.plist"; sourceTree = "<group>"; };
+		5824B438B0496D3F1B68182A6804947D /* imgZipReName-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "imgZipReName-prefix.pch"; sourceTree = "<group>"; };
 		646A691FAC3DF12AD2E8146CF7D1F024 /* Archive+WritingDeprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+WritingDeprecated.swift"; path = "Sources/ZIPFoundation/Archive+WritingDeprecated.swift"; sourceTree = "<group>"; };
-		6B35F579BF9AE4E6ADA4C0E880FAB9F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		70E2214FB6786A8EB2D2AD72CD52624B /* imgZipReName.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = imgZipReName.modulemap; sourceTree = "<group>"; };
-		8A3C30AC8FF8BE3555F075774AC226EF /* imgZipReName.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = imgZipReName.release.xcconfig; sourceTree = "<group>"; };
-		9AAEB01EA66A7E6086A73B9B8D18975D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9B1D95ECECA9032D6A170866EEBF256F /* imgZipReName.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = imgZipReName.debug.xcconfig; sourceTree = "<group>"; };
+		9AEA5F49B2DB5442A423E6E1043F0AD0 /* ReNameVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ReNameVC.xib; path = imgZipReName/Assets/ReNameVC.xib; sourceTree = "<group>"; };
 		9C27FF6C9AAE195C82D08F0031B294C6 /* Archive+Writing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Writing.swift"; path = "Sources/ZIPFoundation/Archive+Writing.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E7708FF821E9F14654237B70374D0C6 /* imgZipReName */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = imgZipReName; path = libimgZipReName.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFBBA5DEF43FEE6D0B470819BD1055E /* Archive+Reading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Reading.swift"; path = "Sources/ZIPFoundation/Archive+Reading.swift"; sourceTree = "<group>"; };
 		AB46558D80A58149936CD01BC247CCCB /* Pods-imgZipReName_Example */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-imgZipReName_Example"; path = "libPods-imgZipReName_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE52FF02C76E7F5F8FE4A8371D6250E9 /* FileDragView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileDragView.swift; sourceTree = "<group>"; };
 		B15024D07A834086D7022688F749C47E /* Pods-imgZipReName_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-imgZipReName_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B4148D6468EC633198991C3D7784A264 /* Entry+Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Entry+Serialization.swift"; path = "Sources/ZIPFoundation/Entry+Serialization.swift"; sourceTree = "<group>"; };
-		B6B2A3E6C7C2EDB1110574952B0D64EC /* imgZipReName-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "imgZipReName-umbrella.h"; sourceTree = "<group>"; };
 		B9BFFC1073FB4BFAD0119736BC575B1F /* ZIPFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-umbrella.h"; sourceTree = "<group>"; };
-		C0B55AD922B890FF4FAFBE05FC888A25 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		BC576AFF4976D35F156811882A03D555 /* imgZipReName.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = imgZipReName.debug.xcconfig; sourceTree = "<group>"; };
+		BE0426A38B2DF596AF55FB681574194D /* ReNameVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReNameVC.swift; sourceTree = "<group>"; };
 		C17618373DC565445B722E09ED30536A /* FileManager+ZIP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+ZIP.swift"; path = "Sources/ZIPFoundation/FileManager+ZIP.swift"; sourceTree = "<group>"; };
 		C6804F54CA0DD7F72A3F3BAC41BD53C8 /* Archive+Progress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Progress.swift"; path = "Sources/ZIPFoundation/Archive+Progress.swift"; sourceTree = "<group>"; };
 		C75F675E81208574DD2CB4BDD2CD8C07 /* Pods-imgZipReName_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-imgZipReName_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D4A557609FEF5E5AC664AEBA24A3AC8B /* ZIPFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-prefix.pch"; sourceTree = "<group>"; };
 		DBB2F5AA9FAC7A1A4BEABC4BB8090AE4 /* Pods-imgZipReName_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-imgZipReName_Example-umbrella.h"; sourceTree = "<group>"; };
+		DC552086DBC12D082B4D39541FF252E1 /* imgZipReName-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "imgZipReName-dummy.m"; sourceTree = "<group>"; };
 		E40A4615292277DB208A361AEB67AE60 /* ZIPFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIPFoundation.debug.xcconfig; sourceTree = "<group>"; };
 		E4440A22BE05F2761874249F45D6F8C5 /* Archive+BackingConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+BackingConfiguration.swift"; path = "Sources/ZIPFoundation/Archive+BackingConfiguration.swift"; sourceTree = "<group>"; };
 		F06DB1970F2F49B41B87FA741CD06DFC /* ZIPFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIPFoundation.release.xcconfig; sourceTree = "<group>"; };
 		F4003153FF628503F92C1B25436B7A93 /* Data+Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compression.swift"; path = "Sources/ZIPFoundation/Data+Compression.swift"; sourceTree = "<group>"; };
-		F46F88A7BA84DE1CA1D72E9C73EE4344 /* imgZipReName-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "imgZipReName-dummy.m"; sourceTree = "<group>"; };
 		F5E5E1EC4020F42942CD391F5A1B7D60 /* Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Sources/ZIPFoundation/Entry.swift; sourceTree = "<group>"; };
 		FD0AA39DBA8E71741843F9F44A16D524 /* Archive+ZIP64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+ZIP64.swift"; path = "Sources/ZIPFoundation/Archive+ZIP64.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17B5B000041CC6288B78D81D76C494F7 /* Frameworks */ = {
+		64C91EA70AFD5C6E6C6D89C6B0D7BE12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64C91EA70AFD5C6E6C6D89C6B0D7BE12 /* Frameworks */ = {
+		7F4E7F0E46FFD54B6695628ABA50BB20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,40 +195,6 @@
 			path = ZIPFoundation;
 			sourceTree = "<group>";
 		};
-		19138AE7F2B56796253980CF03CBFE1C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				44B3096E6B4AEBD00548B2A0D6361BC4 /* imgZipReName.podspec */,
-				6B35F579BF9AE4E6ADA4C0E880FAB9F4 /* LICENSE */,
-				9AAEB01EA66A7E6086A73B9B8D18975D /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		2FE33875E697A9634209BD2D7967FADB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				70E2214FB6786A8EB2D2AD72CD52624B /* imgZipReName.modulemap */,
-				F46F88A7BA84DE1CA1D72E9C73EE4344 /* imgZipReName-dummy.m */,
-				4AEC389053DF1361570FB4E740E94D97 /* imgZipReName-prefix.pch */,
-				B6B2A3E6C7C2EDB1110574952B0D64EC /* imgZipReName-umbrella.h */,
-				9B1D95ECECA9032D6A170866EEBF256F /* imgZipReName.debug.xcconfig */,
-				8A3C30AC8FF8BE3555F075774AC226EF /* imgZipReName.release.xcconfig */,
-				63E8BD7F7A80DB44E0FAD9F3C0E65790 /* ResourceBundle-imgZipReName-imgZipReName-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/imgZipReName";
-			sourceTree = "<group>";
-		};
-		43157AC529D3E5B1FD62BA1DDA097580 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				AE52FF02C76E7F5F8FE4A8371D6250E9 /* FileDragView.swift */,
-			);
-			name = view;
-			path = imgZipReName/Classes/view;
-			sourceTree = "<group>";
-		};
 		47A43D987877A4AD91CE2A1F656136E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +214,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		78399E88ECEB61E31FFFCF8F72BCCD1E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9AEA5F49B2DB5442A423E6E1043F0AD0 /* ReNameVC.xib */,
+				8EFBE84852A6174E8FB91753C3DF252C /* vc */,
+				B724BD6026189D0A350364ADAEC6C1E8 /* view */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8EFBE84852A6174E8FB91753C3DF252C /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				BE0426A38B2DF596AF55FB681574194D /* ReNameVC.swift */,
+				1DAC13367327BA220A0BA0A67A622C5D /* Util.swift */,
+			);
+			name = vc;
+			path = imgZipReName/Classes/vc;
+			sourceTree = "<group>";
+		};
 		A11A142FAFF8CDD8965283EBE4F7D51B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,34 +242,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A79D932B2C2DED3C270EACB4C012AAEE /* imgZipReName */ = {
+		AB017FF411B0FF09744FEF7BEC112371 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				19138AE7F2B56796253980CF03CBFE1C /* Pod */,
-				B029DBABD9B33DCF855AF8ECFC724FD8 /* Source */,
-				2FE33875E697A9634209BD2D7967FADB /* Support Files */,
+				12618805DB36932ED271C11F61ED775B /* imgZipReName.modulemap */,
+				DC552086DBC12D082B4D39541FF252E1 /* imgZipReName-dummy.m */,
+				5824B438B0496D3F1B68182A6804947D /* imgZipReName-prefix.pch */,
+				4610B9585146E23638B9A6797BE68E9F /* imgZipReName-umbrella.h */,
+				BC576AFF4976D35F156811882A03D555 /* imgZipReName.debug.xcconfig */,
+				040FD9C7DA2E824DEA6D95293F2C6772 /* imgZipReName.release.xcconfig */,
+				2323DEA76CCA42D09AA23DB9A6E67814 /* ResourceBundle-imgZipReName-imgZipReName-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/imgZipReName";
+			sourceTree = "<group>";
+		};
+		B724BD6026189D0A350364ADAEC6C1E8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				454F3C40609196B5E7B950AF83331E26 /* FileDragView.swift */,
+			);
+			name = view;
+			path = imgZipReName/Classes/view;
+			sourceTree = "<group>";
+		};
+		C3916AA826955F89FFD2E019FD0F6479 /* imgZipReName */ = {
+			isa = PBXGroup;
+			children = (
+				D15F5378EE8A45ADC277CDA518DEFA76 /* Pod */,
+				78399E88ECEB61E31FFFCF8F72BCCD1E /* Source */,
+				AB017FF411B0FF09744FEF7BEC112371 /* Support Files */,
 			);
 			name = imgZipReName;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		B029DBABD9B33DCF855AF8ECFC724FD8 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				CEF01320ECED898F396C988DD1942F01 /* vc */,
-				43157AC529D3E5B1FD62BA1DDA097580 /* view */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		CEF01320ECED898F396C988DD1942F01 /* vc */ = {
-			isa = PBXGroup;
-			children = (
-				5023A2CA927D84BAA32A4B0890A535F7 /* ReNameVC.swift */,
-				C0B55AD922B890FF4FAFBE05FC888A25 /* Util.swift */,
-			);
-			name = vc;
-			path = imgZipReName/Classes/vc;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -294,6 +287,16 @@
 				697743D3A249C43F941E2C6C6AACCD01 /* Products */,
 				A11A142FAFF8CDD8965283EBE4F7D51B /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D15F5378EE8A45ADC277CDA518DEFA76 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				44ECE409DAAE0BC4DC1CA80A57E9086C /* imgZipReName.podspec */,
+				121CC6C390057C96BA996C9FD1139C04 /* LICENSE */,
+				1045309F4DAFE20348A1E393E6F26678 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -322,7 +325,7 @@
 		FDA865DFEAD5D73BBE79059627820750 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A79D932B2C2DED3C270EACB4C012AAEE /* imgZipReName */,
+				C3916AA826955F89FFD2E019FD0F6479 /* imgZipReName */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -369,8 +372,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				DA49BC961E98C28E5A2D7C5B7C447FDF /* PBXTargetDependency */,
-				753911483A17317B3EC5A04809E530F8 /* PBXTargetDependency */,
+				83DC2379E9BFD821AF90E92B752F0445 /* PBXTargetDependency */,
+				CC303D1C96ACAA590A480D387EB81C5A /* PBXTargetDependency */,
 			);
 			name = imgZipReName;
 			productName = imgZipReName;
@@ -379,11 +382,11 @@
 		};
 		38AA83C04CFB6C07EE700ED457E573E4 /* imgZipReName-imgZipReName */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 514226F1C90BADC0C5685EB21EB3AACB /* Build configuration list for PBXNativeTarget "imgZipReName-imgZipReName" */;
+			buildConfigurationList = 002F3432D5175B44124314A44FA17A15 /* Build configuration list for PBXNativeTarget "imgZipReName-imgZipReName" */;
 			buildPhases = (
-				D5503E6C5EB3501B43F2531737F21BD6 /* Sources */,
-				17B5B000041CC6288B78D81D76C494F7 /* Frameworks */,
-				97B2DCAE64F28F39E0B28C78B8D81361 /* Resources */,
+				EE498C5DFCC417B5492811B4542368CF /* Sources */,
+				7F4E7F0E46FFD54B6695628ABA50BB20 /* Frameworks */,
+				AEA66F2560B78D1F8917DB1E508BC2A5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -405,8 +408,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				C1912A0BA60AA4A9D5E7C389AB329137 /* PBXTargetDependency */,
-				1E478C3493306B128793031D32031082 /* PBXTargetDependency */,
+				F3015EFE1C47EBBD20E972974394A9F7 /* PBXTargetDependency */,
+				684CB7F9A1AC459903327B3E5B456442 /* PBXTargetDependency */,
 			);
 			name = "Pods-imgZipReName_Example";
 			productName = "Pods-imgZipReName_Example";
@@ -462,10 +465,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		97B2DCAE64F28F39E0B28C78B8D81361 /* Resources */ = {
+		AEA66F2560B78D1F8917DB1E508BC2A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B89B741A62375C501C0D014E5F4DCC /* ReNameVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +553,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5503E6C5EB3501B43F2531737F21BD6 /* Sources */ = {
+		EE498C5DFCC417B5492811B4542368CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -578,29 +582,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1E478C3493306B128793031D32031082 /* PBXTargetDependency */ = {
+		684CB7F9A1AC459903327B3E5B456442 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = imgZipReName;
 			target = 1DB3F6E8EA72797018305B013D095C52 /* imgZipReName */;
-			targetProxy = 87B31E2527CFF7C57D11D6B5D207EF0D /* PBXContainerItemProxy */;
+			targetProxy = E37EF6A6CFD59DE67E86C6EEFE4856A7 /* PBXContainerItemProxy */;
 		};
-		753911483A17317B3EC5A04809E530F8 /* PBXTargetDependency */ = {
+		83DC2379E9BFD821AF90E92B752F0445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZIPFoundation;
+			target = AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */;
+			targetProxy = D709109EBB791E931149D26B67FE92E4 /* PBXContainerItemProxy */;
+		};
+		CC303D1C96ACAA590A480D387EB81C5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "imgZipReName-imgZipReName";
 			target = 38AA83C04CFB6C07EE700ED457E573E4 /* imgZipReName-imgZipReName */;
-			targetProxy = 75504565E43A8E6676C8857EE12D3FA4 /* PBXContainerItemProxy */;
+			targetProxy = AAB9BF176A3BB5D90D21F66CF1572582 /* PBXContainerItemProxy */;
 		};
-		C1912A0BA60AA4A9D5E7C389AB329137 /* PBXTargetDependency */ = {
+		F3015EFE1C47EBBD20E972974394A9F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZIPFoundation;
 			target = AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */;
-			targetProxy = 09ACD1D79014A29206246E243878C97B /* PBXContainerItemProxy */;
-		};
-		DA49BC961E98C28E5A2D7C5B7C447FDF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZIPFoundation;
-			target = AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */;
-			targetProxy = F29FFE9E5088DA5E4FCD3CF139BAD93D /* PBXContainerItemProxy */;
+			targetProxy = 26D8CD21AFA698A3DC86443FF1338D8F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -695,7 +699,7 @@
 		};
 		0C58FD43700C82C074346927383BD7D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B1D95ECECA9032D6A170866EEBF256F /* imgZipReName.debug.xcconfig */;
+			baseConfigurationReference = BC576AFF4976D35F156811882A03D555 /* imgZipReName.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -721,7 +725,7 @@
 		};
 		3D43942B709446849847BA676B8E3D11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A3C30AC8FF8BE3555F075774AC226EF /* imgZipReName.release.xcconfig */;
+			baseConfigurationReference = 040FD9C7DA2E824DEA6D95293F2C6772 /* imgZipReName.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -742,6 +746,23 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		49DE8DBD6C54533924A173AB4EF4586C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040FD9C7DA2E824DEA6D95293F2C6772 /* imgZipReName.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgZipReName";
+				IBSC_MODULE = imgZipReName;
+				INFOPLIST_FILE = "Target Support Files/imgZipReName/ResourceBundle-imgZipReName-imgZipReName-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = imgZipReName;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -883,26 +904,9 @@
 			};
 			name = Debug;
 		};
-		F42E61E7BCF9B228E55B7F44D911645E /* Release */ = {
+		BBFD13F53FD0639038D836DBF0A42DC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A3C30AC8FF8BE3555F075774AC226EF /* imgZipReName.release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgZipReName";
-				IBSC_MODULE = imgZipReName;
-				INFOPLIST_FILE = "Target Support Files/imgZipReName/ResourceBundle-imgZipReName-imgZipReName-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_NAME = imgZipReName;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		FE7F3FB1B75BD2D2EA54EE8F4E1240A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B1D95ECECA9032D6A170866EEBF256F /* imgZipReName.debug.xcconfig */;
+			baseConfigurationReference = BC576AFF4976D35F156811882A03D555 /* imgZipReName.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgZipReName";
@@ -920,20 +924,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		002F3432D5175B44124314A44FA17A15 /* Build configuration list for PBXNativeTarget "imgZipReName-imgZipReName" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFD13F53FD0639038D836DBF0A42DC3 /* Debug */,
+				49DE8DBD6C54533924A173AB4EF4586C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				808E544862838153672EA12FCC127D9A /* Debug */,
 				0AE172D8F2A4843BFACAD21A0ED26541 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		514226F1C90BADC0C5685EB21EB3AACB /* Build configuration list for PBXNativeTarget "imgZipReName-imgZipReName" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FE7F3FB1B75BD2D2EA54EE8F4E1240A9 /* Debug */,
-				F42E61E7BCF9B228E55B7F44D911645E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

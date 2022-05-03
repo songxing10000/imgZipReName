@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
   ss.source_files = 'imgZipReName/Classes/**/*.{h,m,swift}'
   ss.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) PODSPEC_NAME=#{s.name} PODSPEC_VERSION=#{s.version}" }
   ss.resource_bundles = {
-      'imgZipReName' => ['imgpiZipReName/Assets/**/*.{storyboard,xib,xcassets,json}', 'imgZipReName/Classes/**/*.{xib}']
+      'imgZipReName' => ['imgpiZipReName/Assets/**/*.{storyboard,xib,xcassets,json}', 'imgZipReName/Assets/*.{xib}']
   }
   
 
