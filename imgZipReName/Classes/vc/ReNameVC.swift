@@ -23,17 +23,18 @@ public class ReNameVC: NSViewController {
         super.viewDidLoad()
         title = "图片zip重命名"
         
-        imgNames.append(contentsOf: Util.getStrArrByKey("zip_img_names"))
+        // 回显历史的重命名
+        imgNames.append(contentsOf: Util.getStrsFromUserDefaults(key: "zip_img_names"))
         m_tableView.reloadData()
         
-        // cell右键菜单
+        // 给table的cell添加右键菜单
         let menu = NSMenu()
         menu.delegate = self
         m_tableView.menu = menu
         
         m_listBox.dataSource = self
         m_listBox.delegate  = self
-        m_xcassetsFolderPaths.append(contentsOf: Util.getStrArrByKey("spFolderPath"))
+        m_xcassetsFolderPaths.append(contentsOf: Util.getStrsFromUserDefaults(key: "spFolderPath"))
         m_listBox.reloadData()
         if !m_xcassetsFolderPaths.isEmpty {
             m_listBox.selectItem(at: 0)

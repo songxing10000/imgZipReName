@@ -22,7 +22,7 @@ final class Util {
         return getLibBundle()?.image(forResource: imgName)
     }
     // 取字符串数组
-    static func getStrArrByKey(_ key: String?) -> [String] {
+    static func getStrsFromUserDefaults(key: String?) -> [String] {
         guard let key = key else {
             return [String]()
         }
