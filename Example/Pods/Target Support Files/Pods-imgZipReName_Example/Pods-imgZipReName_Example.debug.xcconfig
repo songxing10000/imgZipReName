@@ -1,14 +1,15 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/imgZipReName" "${PODS_CONFIGURATION_BUILD_DIR}/xUtils" "${PODS_CONFIGURATION_BUILD_DIR}/xViews"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 $(inherited) PODSPEC_NAME=imgZipReName PODSPEC_VERSION=0.0.3
-LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" "${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/imgZipReName" /usr/lib/swift
-OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation/ZIPFoundation.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/imgZipReName/imgZipReName.modulemap"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"ZIPFoundation" -l"imgZipReName"
-OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation/ZIPFoundation.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/imgZipReName/imgZipReName.modulemap"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation/ZIPFoundation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/imgZipReName/imgZipReName.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/xUtils/xUtils.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/xViews/xViews.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/../Frameworks' '@loader_path/Frameworks' "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
+LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+OTHER_LDFLAGS = $(inherited) -framework "ZIPFoundation" -framework "imgZipReName" -framework "xUtils" -framework "xViews"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
 PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
-SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/imgZipReName"
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

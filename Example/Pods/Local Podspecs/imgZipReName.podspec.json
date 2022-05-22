@@ -22,6 +22,12 @@
   "dependencies": {
     "ZIPFoundation": [
       "~> 0.9.12"
+    ],
+    "xUtils": [
+
+    ],
+    "xViews": [
+
     ]
   },
   "subspecs": [

@@ -17,7 +17,7 @@ class ViewController: NSViewController {
     }
     
     @IBAction func clickBtn(_ sender: NSButton) {
-        let vc = ReNameVC.vc()
+        let vc = iOSReNameVC.vc()
         presentAsModalWindow(vc)
     }
     override var representedObject: Any? {

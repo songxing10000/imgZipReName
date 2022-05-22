@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="ReNameVC" customModule="imgZipReName" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="iOSReNameVC" customModule="imgZipReName" customModuleProvider="target">
             <connections>
                 <outlet property="m_listBox" destination="14l-am-UeK" id="BL6-tj-I4y"/>
                 <outlet property="m_tableView" destination="IDV-7t-d3o" id="MBe-8Y-4Rr"/>
@@ -90,7 +90,7 @@
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="dpm-65-I2H"/>
                     </constraints>
                     <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Lsf-mH-ekb">
-                        <rect key="frame" x="1" y="256" width="400" height="15"/>
+                        <rect key="frame" x="1" y="256" width="414" height="15"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="pX7-Dj-W6O">

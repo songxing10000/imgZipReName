@@ -6,14 +6,32 @@
 //
 
 import Cocoa
-import ZIPFoundation
 
-public class ReNameVC: NSViewController {
+import ZIPFoundation
+import xUtils
+import xViews
+
+private func getLibBundle() -> Bundle? {
+    let fb = Bundle(for: iOSReNameVC.self)
+    guard let path = fb.path(forResource: "imgZipReName", ofType: "bundle") else {
+        return nil
+    }
+    return Bundle(path: path)
+    
+}
+private func getImg(_ imgName: String?) -> NSImage? {
+    guard let imgName = imgName else {
+        return nil
+    }
+    return getLibBundle()?.image(forResource: imgName)
+}
+
+public class iOSReNameVC: NSViewController {
     /// 输入框
     @IBOutlet weak var m_textField: NSSearchField!
     private var imgNames = [String]()
-    public static func vc() -> ReNameVC {
-        return ReNameVC(nibName: "ReNameVC", bundle: Util.getLibBundle())
+    public static func vc() -> iOSReNameVC {
+        return iOSReNameVC(nibName: "iOSReNameVC", bundle: getLibBundle())
     }
     @IBOutlet private weak var m_tableView: NSTableView!
     lazy var m_xcassetsFolderPaths = [String]()
@@ -24,7 +42,7 @@ public class ReNameVC: NSViewController {
         title = "图片zip重命名"
         
         // 回显历史的重命名
-        imgNames.append(contentsOf: Util.getStrsFromUserDefaults(key: "zip_img_names"))
+        imgNames.append(contentsOf: xUtils.getStrsFromUserDefaults(key: "zip_img_names"))
         m_tableView.reloadData()
         
         // 给table的cell添加右键菜单
@@ -34,7 +52,7 @@ public class ReNameVC: NSViewController {
         
         m_listBox.dataSource = self
         m_listBox.delegate  = self
-        m_xcassetsFolderPaths.append(contentsOf: Util.getStrsFromUserDefaults(key: "spFolderPath"))
+        m_xcassetsFolderPaths.append(contentsOf: xUtils.getStrsFromUserDefaults(key: "spFolderPath"))
         m_listBox.reloadData()
         if !m_xcassetsFolderPaths.isEmpty {
             m_listBox.selectItem(at: 0)
@@ -63,11 +81,11 @@ public class ReNameVC: NSViewController {
         let imgNewName = m_textField.stringValue
         // 文件夹下有没有同名 的 te.imageset
         let findFolderPath = "\(unzipFolderPath)/\(imgNewName).imageset"
-        if Util.isFolderExists(findFolderPath) {
-            Util.showAlter(msg: "有同名了，换个名字吧")
+        if xUtils.isFolderExists(findFolderPath) {
+            xUtils.showAlter(msg: "有同名了，换个名字吧")
             return
         }
-        Util.createFolder(findFolderPath)
+        xUtils.createFolder(findFolderPath)
         let findFolderURL = URL(fileURLWithPath: findFolderPath)
             do {
                 try fm.unzipItem(at: zipFileURL, to: findFolderURL)
@@ -77,7 +95,7 @@ public class ReNameVC: NSViewController {
                     return
                 }
                 var ContentsJson: String?
-                if let jsonFilePath = Util.getLibBundle()?.path(forResource: "Contents", ofType: "json") {
+                if let jsonFilePath = getLibBundle()?.path(forResource: "Contents", ofType: "json") {
                     do {
                         ContentsJson = try String(contentsOfFile: jsonFilePath, encoding: .utf8)
                     } catch {
@@ -96,7 +114,7 @@ public class ReNameVC: NSViewController {
                                try fm.moveItem(at: pngFileURL, to: newPngFileURL)
     
                                
-                               let newNames = Util.saveStrToStrArr(key: "zip_img_names" , saveStr: imgNewName )
+                               let newNames = xUtils.saveStrToStrArr(key: "zip_img_names" , saveStr: imgNewName )
                                if !newNames.isEmpty {
                                    imgNames.removeAll()
                                    imgNames.append(contentsOf: newNames)
@@ -154,13 +172,13 @@ public class ReNameVC: NSViewController {
         let unzipTempFolderURL = URL(fileURLWithPath: unzipTempFolderPath)
         
          
-            Util.removeFolderAtPath(unzipTempFolderPath)
-            Util.createFolder(unzipTempFolderPath)
+        xUtils.removeFolderAtPath(unzipTempFolderPath)
+        xUtils.createFolder(unzipTempFolderPath)
             
-            if Util.isFolderExists(unzipFolderPath) {
+            if xUtils.isFolderExists(unzipFolderPath) {
                 // 文件夹存在
             } else {
-                Util.createFolder(unzipFolderPath)
+                xUtils.createFolder(unzipFolderPath)
             }
          
         let imgNewName = m_textField.stringValue
@@ -184,7 +202,7 @@ public class ReNameVC: NSViewController {
                         try fm.moveItem(at: newPngFileURL, to: newPngFileURL2)
                         
                         
-                        let newNames = Util.saveStrToStrArr(key: "zip_img_names" , saveStr: imgNewName )
+                        let newNames = xUtils.saveStrToStrArr(key: "zip_img_names" , saveStr: imgNewName )
                         if !newNames.isEmpty {
                             imgNames.removeAll()
                             imgNames.append(contentsOf: newNames)
@@ -214,9 +232,9 @@ public class ReNameVC: NSViewController {
     // 指定文件病例
     @IBAction func chooseFolder(_ sender: NSButton) {
         
-        Util.chooseFolder(for: view.window) { folderPath in
+        xUtils.chooseFolder(for: view.window) { folderPath in
             if folderPath.contains(".xcassets") {
-                let folderPaths = Util.saveStrToStrArr(key: "spFolderPath", saveStr: folderPath)
+                let folderPaths = xUtils.saveStrToStrArr(key: "spFolderPath", saveStr: folderPath)
                 
                 if !folderPaths.isEmpty {
                     self.m_xcassetsFolderPaths.removeAll()
@@ -237,8 +255,8 @@ public class ReNameVC: NSViewController {
         m_listBox.reloadData()
     }
 }
-extension ReNameVC: FileDragDelegate {
-    func didFinishDrag(_ URLs: [URL]) {
+extension iOSReNameVC: FileDragDelegate {
+    public func didFinishDrag(_ URLs: [URL]) {
         
         let fileURL = URLs[0]
         let ext = fileURL.pathExtension
@@ -251,13 +269,13 @@ extension ReNameVC: FileDragDelegate {
     }
 }
 // MARK: - NSTableViewDataSource
-extension ReNameVC: NSTableViewDataSource {
+extension iOSReNameVC: NSTableViewDataSource {
     public func numberOfRows(in tableView: NSTableView) -> Int {
         return imgNames.count
     }
 }
 // MARK: - NSTableViewDelegate
-extension ReNameVC: NSTableViewDelegate {
+extension iOSReNameVC: NSTableViewDelegate {
     public func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
         let imgName = imgNames[row]
@@ -269,7 +287,7 @@ extension ReNameVC: NSTableViewDelegate {
     }
 }
 // MARK: - NSMenuDelegate
-extension ReNameVC: NSMenuDelegate {
+extension iOSReNameVC: NSMenuDelegate {
     public func menuNeedsUpdate(_ menu: NSMenu) {
         menu.removeAllItems()
         // 在这里动态添加 menu item
@@ -292,7 +310,7 @@ extension ReNameVC: NSMenuDelegate {
        
     }
 }
-extension ReNameVC: NSComboBoxDataSource {
+extension iOSReNameVC: NSComboBoxDataSource {
     public func comboBox(_ aComboBox: NSComboBox, objectValueForItemAt index: Int) -> Any? {
         guard index < m_xcassetsFolderPaths.count else {
             return nil
@@ -304,7 +322,7 @@ extension ReNameVC: NSComboBoxDataSource {
         return m_xcassetsFolderPaths.count
     }
 }
-extension ReNameVC: NSComboBoxDelegate {
+extension iOSReNameVC: NSComboBoxDelegate {
     public func comboBoxSelectionDidChange(_ notification: Notification) {
         if let comboBox = notification.object as? NSComboBox, comboBox === m_listBox {
             guard comboBox.indexOfSelectedItem < m_xcassetsFolderPaths.count else { return }

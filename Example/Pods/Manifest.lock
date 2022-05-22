@@ -1,13 +1,21 @@
 PODS:
   - imgZipReName (0.0.3):
     - imgZipReName/Source (= 0.0.3)
+    - xUtils
+    - xViews
     - ZIPFoundation (~> 0.9.12)
   - imgZipReName/Source (0.0.3):
+    - xUtils
+    - xViews
     - ZIPFoundation (~> 0.9.12)
+  - xUtils (0.1.0)
+  - xViews (0.1.0)
   - ZIPFoundation (0.9.13)
 
 DEPENDENCIES:
   - imgZipReName (from `../`)
+  - xUtils (from `../../xUtils/`)
+  - xViews (from `../../xViews/`)
 
 SPEC REPOS:
   trunk:
@@ -16,11 +24,17 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   imgZipReName:
     :path: "../"
+  xUtils:
+    :path: "../../xUtils/"
+  xViews:
+    :path: "../../xViews/"
 
 SPEC CHECKSUMS:
-  imgZipReName: 4c303ecb141281072fabb48bf0aba1cbd6a1f8f0
+  imgZipReName: 4d590f71b7e4a2ea96d814a1785f17d700a46ed1
+  xUtils: b2310993d9d5298b027989acad4951aeeb2d34ca
+  xViews: 70824eaf5b63c7ac2148f7497d5779c3eefcce92
   ZIPFoundation: ae5b4b813d216d3bf0a148773267fff14bd51d37
 
-PODFILE CHECKSUM: f496dd66c61676a90bb36318d2f9aa86eec8c60c
+PODFILE CHECKSUM: 5770526e9a6fd10f38615bebd8999e6ec3964ede
 
 COCOAPODS: 1.11.3

@@ -1,8 +1,15 @@
+use_frameworks!
+
+platform :osx, '10.15'
+
+install! 'cocoapods',
+:warn_for_unused_master_specs_repo => false
 
 target 'imgZipReName_Example' do
   pod 'imgZipReName', :path => '../'
-
-   
+  pod 'xViews', :path => '../../xViews/'
+  pod 'xUtils', :path => '../../xUtils/'
+  
 end
 post_install do |installer|
   installer.pod_target_subprojects.flat_map { |p| p.targets }.each do |target|

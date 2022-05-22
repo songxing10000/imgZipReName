@@ -1,4 +1,4 @@
-module Pods_imgZipReName_Example {
+framework module Pods_imgZipReName_Example {
   umbrella header "Pods-imgZipReName_Example-umbrella.h"
 
   export *

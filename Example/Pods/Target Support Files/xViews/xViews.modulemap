@@ -1,0 +1,6 @@
+framework module xViews {
+  umbrella header "xViews-umbrella.h"
+
+  export *
+  module * { export * }
+}

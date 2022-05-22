@@ -178,10 +178,14 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/imgZipReName/imgZipReName.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/xUtils/xUtils.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/xViews/xViews.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/imgZipReName/imgZipReName.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/xUtils/xUtils.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/xViews/xViews.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

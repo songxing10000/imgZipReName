@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4C0FFBBC-FBDE-4CCE-AA24-8685D5A8E36F"
+            uuid = "DD676647-8750-4037-A1D6-D1B6D7979B1F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../imgZipReName/Classes/vc/ReNameVC.swift"
+            filePath = "../imgZipReName/Classes/vc/iOSReNameVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "zipToDefaultFolder(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "632AF6AC-C7B7-4BA2-8C99-E11744CEFF6D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../imgZipReName/Classes/vc/ReNameVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
-            landmarkName = "chooseFolder(_:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "vc()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

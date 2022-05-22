@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DB3F6E8EA72797018305B013D095C52"
-               BuildableName = "imgZipReName.framework"
-               BlueprintName = "imgZipReName"
+               BlueprintIdentifier = "AC9549A2C5AC1F753570D717E1D9475B"
+               BuildableName = "xUtils.framework"
+               BlueprintName = "xUtils"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

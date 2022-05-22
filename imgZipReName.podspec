@@ -30,7 +30,8 @@ TODO: Add long description of the pod here.
 
   s.platform = :osx
   s.osx.deployment_target = "10.15"
-  
+  s.swift_versions = ['5.0']
+
   s.subspec 'Source' do |ss|
   ss.source_files = 'imgZipReName/Classes/**/*.{h,m,swift}'
   ss.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) PODSPEC_NAME=#{s.name} PODSPEC_VERSION=#{s.version}" }
@@ -49,7 +50,8 @@ TODO: Add long description of the pod here.
 #    end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'Cocoa'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'xUtils'
+  s.dependency 'xViews'
 
 end
 
